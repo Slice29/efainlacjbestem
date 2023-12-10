@@ -1,0 +1,20 @@
+
+<div class="container">
+    <div class="header">
+        <mat-toolbar color="primary">Access log list</mat-toolbar>
+    </div>
+    <ul>
+      <li *ngFor="let log of service.accessLogList">
+        <div class="card">
+          <mat-card>
+            <mat-card-content>
+              <p><strong>Timestamp:</strong> {{ log.timestamp }}</p>
+              <p><strong>Username:</strong> {{ log.username }}</p>
+              <p><strong>Endpoint:</strong> {{ log.endpoint }}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </li>
+    </ul>
+  </div>
+  

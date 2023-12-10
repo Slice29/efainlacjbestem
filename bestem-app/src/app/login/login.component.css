@@ -1,0 +1,12 @@
+.custom-padding {
+    padding: 20px;
+  }
+  .or-text-container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .or-text {
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
