@@ -15,12 +15,14 @@ import { MatCheckboxModule} from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';  
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MicrosoftLoginComponent } from './microsoft-login/microsoft-login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    MicrosoftLoginComponent
   ],
   imports: [
     BrowserModule,

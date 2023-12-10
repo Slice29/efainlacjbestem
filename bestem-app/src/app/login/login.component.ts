@@ -36,4 +36,8 @@ export class LoginComponent implements OnInit {
       */
     }
   }
+
+  redirectToUserLogin() {
+    this.router.navigate(['/microsoft-login']);
+  }
 }

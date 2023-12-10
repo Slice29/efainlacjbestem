@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { AccessLog } from '../models/access-log';
+import { Observable, interval, switchMap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -31,5 +32,11 @@ export class AccessLogService {
         console.log(error);
       }
     })*/
+  }
+
+  watchForToken(): Observable<any> {
+    return interval(1000).pipe(
+      switchMap(() => this.http.get('http://localhost:5240/api/authentication/receivetoken'))
+    );
   }
 }
